@@ -6,37 +6,31 @@ import commonSettings from "./global.js";
 // then set the values in darkTheme using the global color variables
 
 const darkTheme = {
-  color: "#FCFCFC",
+  color: "#000000",
   gold: "#ffe300",
-  gray: "#A3A3A3",
-  textHighlightColor: "#ffe300",
-  backgroundColor: "#1F232D",
-  // background:`
-  // linear-gradient(180deg, rgba(8, 15, 53, 0), rgba(0, 0, 10, 0.9))
-  // `,
-  // background: `
-  //   linear-gradient(180deg, rgba(8, 15, 53, 0), rgba(0, 0, 10, 0.9)),
-  //   linear-gradient(333deg, rgba(153, 207, 255, 0.2), rgba(180, 255, 217, 0.08)),
-  //   radial-gradient(circle at 77% 89%, rgba(125, 163, 169, 0.8), rgba(125, 163, 169, 0) 50%),
-  //   radial-gradient(circle at 15% 95%, rgba(125, 163, 169, 0.8), rgba(125, 163, 169, 0) 43%),
-  //   radial-gradient(circle at 65% 23%, rgba(137, 151, 119, 0.4), rgba(137, 151, 119, 0) 70%),
-  //   radial-gradient(circle at 10% 0%, rgba(187, 211, 204, 0.33), rgba(187,211,204,0) 35%),
-  //   radial-gradient(circle at 11% 100%, rgba(131, 165, 203, 0.3), rgba(131, 165, 203, 0) 30%)
-  //   `,
-  paperBg: "#282D37",
+  gray: "#000000",
+  textHighlightColor: "#000000",
+// backgroundColor: "#1F232D",
+//   background:`
+//   linear-gradient(180deg, rgba(8, 15, 53, 0), rgba(0, 0, 10, 0.9))
+//   `,
+   background: `
+   linear-gradient(180deg, #AFCDE9 1%, #F7FBE7 100%)
+     `,
+  paperBg: "#b1c4d4",
   modalBg: "#282D37",
   popoverBg: "rgba(54, 56, 64, 0.99)",
   menuBg: "#36384080",
   backdropBg: "rgba(54, 56, 64, 0.5)",
-  largeTextColor: "#ffe300",
+  largeTextColor: "#000000",
   activeLinkColor: "#F5DDB4",
   activeLinkSvgColor:
     "brightness(0) saturate(100%) invert(84%) sepia(49%) saturate(307%) hue-rotate(326deg) brightness(106%) contrast(92%)",
   primaryButtonColor: "#333333",
-  primaryButtonBG: "#ffe300",
+  primaryButtonBG: "#000000",
   primaryButtonHoverBG: "#EDD8B4",
   secondaryButtonHoverBG: "rgba(54, 56, 64, 1)",
-  outlinedPrimaryButtonHoverBG: "#ffe300",
+  outlinedPrimaryButtonHoverBG: "#000000",
   outlinedPrimaryButtonHoverColor: "#333333",
   outlinedSecondaryButtonHoverBG: "transparent",
   outlinedSecondaryButtonHoverColor: "#ffe300", //gold
@@ -184,7 +178,7 @@ export const dark = responsiveFontSizes(
                 color: darkTheme.color,
                 backgroundColor: darkTheme.paperBg,
                 borderColor: "transparent",
-                outline: "#00000000",
+                outline: "#000000",
               },
             },
           },
@@ -230,8 +224,8 @@ export const dark = responsiveFontSizes(
             },
           },
           outlinedPrimary: {
-            color: darkTheme.gold,
-            borderColor: darkTheme.gold,
+            color: darkTheme.color,
+            borderColor: darkTheme.color,
             "&:hover": {
               color: darkTheme.outlinedPrimaryButtonHoverColor,
               backgroundColor: darkTheme.primaryButtonHoverBG,
@@ -256,7 +250,7 @@ export const dark = responsiveFontSizes(
             },
           },
           textPrimary: {
-            color: "#A3A3A3",
+            color: "#000000",
             "&:hover": {
               color: darkTheme.gold,
               backgroundColor: "#00000000",

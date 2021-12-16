@@ -301,7 +301,7 @@ function Stake() {
                           <Button
                             className="stake-button"
                             variant="contained"
-                            color="primary"
+                            color="#bbd5e9"
                             disabled={isPendingTxn(pendingTransactions, "approve_staking")}
                             onClick={() => {
                               onSeekApproval("ohm");
