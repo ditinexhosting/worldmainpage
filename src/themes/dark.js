@@ -186,7 +186,7 @@ export const dark = responsiveFontSizes(
         MuiButton: {
           containedPrimary: {
             color: darkTheme.primaryButtonColor,
-            backgroundColor: darkTheme.gold,
+            backgroundColor: "#005dab",
             "&:hover": {
               backgroundColor: darkTheme.primaryButtonHoverBG,
               color: darkTheme.primaryButtonHoverColor,
