@@ -13,17 +13,17 @@ const externalUrls = [
   // },
   {
     title: "Governance",
-    url: "https://pidao.gitbook.io/homepage/community/governance",
+    url: "https://WaltsWorld.gitbook.io/homepage/community/governance",
     icon: <SvgIcon color="primary" component={GovIcon} />,
   },
   {
     title: "Docs",
-    url: "https://pidao.gitbook.io/homepage/",
+    url: "https://WaltsWorld.gitbook.io/homepage/",
     icon: <SvgIcon color="primary" component={DocsIcon} />,
   },
   {
     title: "Feedback",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLScnaNowC-y5Yj9QET3j67aqpKN6FWFAit973ICQzAsERaVw0w/viewform",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfXuXbs7Kik-9lw55XRQAe10iSShxFvnF03_oO8t-Oc_Ic6-g/viewform",
     icon: <SvgIcon color="primary" component={FeedbackIcon} />,
   }
 ];

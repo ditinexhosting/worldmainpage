@@ -138,7 +138,7 @@ function NavContent() {
               </ANavLink>
               
 
-              <ANavLink
+{/*              <ANavLink
                 component={NavLink}
                 id="33-together-nav"
                 to="/33-together"
@@ -153,19 +153,20 @@ function NavContent() {
                   3,3
                 </Typography>
               </ANavLink>
+              */}
               <ANavLink
-                component={NavLink}
-                id="nft"
-                to="/nft"
-                isActive={(match, location) => {
-                  return checkPage(match, location, "nft");
-                }}
+        //        component={NavLink}
+        //       id="nft"
+        //       to="/nft"
+        //      isActive={(match, location) => {
+        //          return checkPage(match, location, "nft");
+        //       }}
                 className={`button-dapp-menu ${isActive ? "active" : ""}`}
                 bg2={NFTimg2}
               >
                 <Typography variant="h6">
                   <ANavIcon bg1={NFTimg} />
-                  WALTNFT
+                  WALTNFT (coming soon)
                 </Typography>
               </ANavLink>
               <ANavLink
