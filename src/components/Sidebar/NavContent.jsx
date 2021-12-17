@@ -30,6 +30,12 @@ import Togetherimg2 from '../../assets/ohm/33@2x.png'
 import NFTimg from '../../assets/ohm/nft-1@2x.png'
 import NFTimg2 from '../../assets/ohm/nft@2x.png'
 
+import Dollarlogo1 from '../../assets/ohm/dollar-zwart.png'
+import Dollarlogo2 from '../../assets/ohm/dollar-bleu.png'
+
+import Dextool1 from '../../assets/ohm/dextool1.png'
+import Dextool2 from '../../assets/ohm/dextool2.png'
+
 
 
 
@@ -86,6 +92,7 @@ function NavContent() {
               </div>
             )} */}
           </Box>
+          
 
           <div className="dapp-menu-links">
             <div className="dapp-nav" id="navbarNav">
@@ -104,6 +111,15 @@ function NavContent() {
                   Dashboard
                 </Typography>
               </ANavLink>
+
+              <ANavLink href="https://pancakeswap.finance/swap" target="_blank" className="fxCenter"
+              className={`button-dapp-menu ${isActive ? "active" : ""}`}
+              bg2={Dollarlogo1}>
+              <Typography variant="h6" className="fxCenter">
+          <ANavIcon bg1={Dollarlogo2} />
+          Buy WALT
+          </Typography>
+          </ANavLink>
 
               <ANavLink
                 component={NavLink}
@@ -134,7 +150,7 @@ function NavContent() {
               >
                 <Typography variant="h6">
                   <ANavIcon bg1={Togetherimg} />
-                  3,3 π
+                  3,3
                 </Typography>
               </ANavLink>
               <ANavLink
@@ -149,7 +165,7 @@ function NavContent() {
               >
                 <Typography variant="h6">
                   <ANavIcon bg1={NFTimg} />
-                  PINFT
+                  WALTNFT
                 </Typography>
               </ANavLink>
               <ANavLink
@@ -187,6 +203,16 @@ function NavContent() {
                       )}
                     </ANavLink>
                   ))}
+
+                  <ANavLink href="https://www.dextools.io/app/polygon/pair-explorer/0x320a50f32fb9e20fe113573031132c89835e496c" target="_blank" className="fxCenter"
+                      className={`button-dapp-menu ${isActive ? "active" : ""}`}
+                       bg2={Dextool2}>
+                        <Typography variant="h6" className="fxCenter">
+                         <ANavIcon bg1={Dextool1} />
+                         Dextools
+                       </Typography>
+                  </ANavLink>
+
                 </div>
               </div>
             </div>
@@ -200,6 +226,8 @@ function NavContent() {
                   <Typography variant="h6">{externalUrls[link].icon}</Typography>
                   <Typography variant="h6">{externalUrls[link].title}</Typography>
                 </ANavLink>
+
+                
               );
             })}
           </div>
@@ -228,7 +256,7 @@ const ANavLink = styled(Link)`
   &:hover,&.active{
     text-decoration:none;
     h6{
-    color:#ffe300;
+    color:#000000;
     }
     ${ANavIcon}{
       background-image: url(${props => props.bg2});

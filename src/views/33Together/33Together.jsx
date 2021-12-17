@@ -51,7 +51,7 @@ const PoolTogether = () => {
   // TODO (appleseed-33T): create a table for AwardHistory
   const [yourAwardHistory, setYourAwardHistory] = useState([]);
   const [infoTooltipMessage, setInfoTooltipMessage] = useState([
-    "Deposit sWWORLD to win! Once deposited, you will receive a corresponding amount of 3,3 π and be entered to win until your sWWORLD is withdrawn.",
+    "Deposit sWALT to win! Once deposited, you will receive a corresponding amount of 3,3  and be entered to win until your sWALT is withdrawn.",
   ]);
   const isAccountLoading = useSelector(state => state.account.loading ?? true);
 
@@ -145,7 +145,7 @@ const PoolTogether = () => {
 
       <Paper className="ohm-card">
         <Box display="flex">
-          <CardHeader title="3,3 π" />
+          <CardHeader title="3,3" />
           <InfoTooltipMulti messagesArray={infoTooltipMessage} />
         </Box>
         <Tabs

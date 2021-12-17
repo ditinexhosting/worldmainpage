@@ -14,3 +14,23 @@ linear-gradient(180deg, rgba(8, 15, 53, 0), rgba(0, 0, 10, 0.9)),
      radial-gradient(circle at 65% 23%, rgba(137, 151, 119, 0.4), rgba(137, 151, 119, 0) 70%),
      radial-gradient(circle at 10% 0%, rgba(187, 211, 204, 0.33), rgba(187,211,204,0) 35%),
      radial-gradient(circle at 11% 100%, rgba(131, 165, 203, 0.3), rgba(131, 165, 203, 0) 30%)
+
+
+              <ANavLink href="https://pancakeswap.finance/swap" target="_blank" className="fxCenter"
+              className={`button-dapp-menu ${isActive ? "active" : ""}`}
+              bg2={Dollarlogo1}>
+              <Typography variant="h6" className="fxCenter">
+          <ANavIcon bg1={Dollarlogo2} />
+          Buy WALT
+          </Typography>
+          </ANavLink>
+
+
+                            <ANavLink href="https://pancakeswap.finance/swap" target="_blank" className="fxCenter"
+                      className={`button-dapp-menu ${isActive ? "active" : ""}`}
+                       bg2={Dextool2}>
+                        <Typography variant="h6" className="fxCenter">
+                         <ANavIcon bg1={Dextool1} />
+                         Dextools
+                       </Typography>
+                  </ANavLink>

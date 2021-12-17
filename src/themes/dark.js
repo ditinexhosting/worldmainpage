@@ -6,10 +6,10 @@ import commonSettings from "./global.js";
 // then set the values in darkTheme using the global color variables
 
 const darkTheme = {
-  color: "#000000",
-  gold: "#ffe300",
+  color: "#005dab",
+  gold: "#000000",
   gray: "#000000",
-  textHighlightColor: "#000000",
+  textHighlightColor: "#b4d0e9",
 // backgroundColor: "#1F232D",
 //   background:`
 //   linear-gradient(180deg, rgba(8, 15, 53, 0), rgba(0, 0, 10, 0.9))
@@ -94,14 +94,14 @@ export const dark = responsiveFontSizes(
               backgroundColor: darkTheme.paperBg,
             },
             "&.ohm-modal": {
-              backgroundColor: darkTheme.modalBg,
+              backgroundColor: "#b1c4d4",
             },
             "&.ohm-menu": {
-              backgroundColor: darkTheme.menuBg,
+              backgroundColor: "#b1c4d4",
               backdropFilter: "blur(33px)",
             },
             "&.ohm-popover": {
-              backgroundColor: darkTheme.popoverBg,
+              backgroundColor: "#b1c4d4",
               color: darkTheme.color,
               backdropFilter: "blur(15px)",
             },
@@ -124,13 +124,13 @@ export const dark = responsiveFontSizes(
             },
             "&.active": {
               color: darkTheme.color,
-              textDecoration: "underline",
+              textDecoration: "none",
             },
           },
         },
         MuiTableCell: {
           root: {
-            color: darkTheme.color,
+            color: "darkTheme.gray",
           },
         },
         MuiInputBase: {
@@ -150,7 +150,7 @@ export const dark = responsiveFontSizes(
           textColorPrimary: {
             color: darkTheme.gray,
             "&$selected": {
-              color: darkTheme.gold,
+              color: darkTheme.gold,   //highlightkleur
             },
           },
         },

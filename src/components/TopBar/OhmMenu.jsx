@@ -71,7 +71,7 @@ function OhmMenu() {
     >
       <Button id="ohm-menu-button" size="large" variant="contained" color="secondary" title="PID" aria-describedby={id}>
         <SvgIcon component={InfoIcon} color="primary" />
-        <Typography>PID</Typography>
+        <Typography>WALT</Typography>
       </Button>
 
       <Popper id={id} open={open} anchorEl={anchorEl} placement="bottom-start" transition>
@@ -99,7 +99,7 @@ function OhmMenu() {
                   >
                     <Button size="large" variant="contained" color="secondary" fullWidth>
                       <Typography align="left">
-                      Get PID-BUSD LP <SvgIcon component={ArrowUpIcon} htmlColor="#A3A3A3" />
+                      Get WALT-BUSD LP <SvgIcon component={ArrowUpIcon} htmlColor="#A3A3A3" />
                       </Typography>
                     </Button>
                   </Link>
@@ -119,12 +119,12 @@ function OhmMenu() {
                     <p>ADD TOKEN TO WALLET</p>
                     <Box display="flex" flexDirection="row" justifyContent="space-between">
                       <Button variant="contained" color="secondary" onClick={addTokenToWallet("PID", PID_ADDRESS)}>
-                        <TokenIcon size={32} symbol="PID"/>
-                        <Typography variant="body1">PID</Typography>
+                        <TokenIcon size={32} symbol="WALT"/>
+                        <Typography variant="body1">WALT</Typography>
                       </Button>
                       <Button variant="contained" color="secondary" onClick={addTokenToWallet("sPID", SPID_ADDRESS)}>
-                        <TokenIcon size={32} symbol="sPID"/> 
-                        <Typography variant="body1">sPID</Typography>
+                        <TokenIcon size={32} symbol="sWALT"/> 
+                        <Typography variant="body1">sWALT</Typography>
                       </Button>
                       {/* <Button variant="contained" color="secondary" onClick={addTokenToWallet("33T", PT_TOKEN_ADDRESS)}>
                         <Typography variant="body1">33T</Typography>

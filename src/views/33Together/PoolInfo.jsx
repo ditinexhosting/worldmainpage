@@ -62,7 +62,7 @@ export const PoolInfo = props => {
               </div>
               <div className="data-row">
                 <Typography>Your wallet balance</Typography>
-                <Typography>{props.isAccountLoading ? <Skeleton width={100} /> : props.sohmBalance} sWWORLD</Typography>
+                <Typography>{props.isAccountLoading ? <Skeleton width={100} /> : props.sohmBalance} sWALT</Typography>
               </div>
             </Box>
             <Divider color="secondary" />
@@ -77,18 +77,18 @@ export const PoolInfo = props => {
           <div className="data-row">
             <Typography>Total Deposits</Typography>
             <Typography>
-              {props.graphLoading ? <Skeleton width={100} /> : props.totalDeposits.toLocaleString()} sWWORLD
+              {props.graphLoading ? <Skeleton width={100} /> : props.totalDeposits.toLocaleString()} sWALT
             </Typography>
           </div>
           <div className="data-row">
             <Typography>Total Sponsorship</Typography>
             <Typography>
-              {props.graphLoading ? <Skeleton width={100} /> : props.totalSponsorship.toLocaleString()} sWWORLD
+              {props.graphLoading ? <Skeleton width={100} /> : props.totalSponsorship.toLocaleString()} sWALT
             </Typography>
           </div>
           <div className="data-row">
             <Typography>Yield Source</Typography>
-            <Typography>sWWORLD</Typography>
+            <Typography>sWALT</Typography>
           </div>
           <div className="data-row">
             <Typography>Pool owner</Typography>
@@ -120,13 +120,13 @@ export const PoolInfo = props => {
         <div className="data-row-centered">
           <div className="marginedBtn">
             <Button variant="outlined" color="secondary" href={poolTogetherUILinks(chainID)[0]} target="_blank">
-              <Typography variant="body1">sWWORLD Prize Pool&nbsp;</Typography>
+              <Typography variant="body1">sWALT Prize Pool&nbsp;</Typography>
               <SvgIcon component={ArrowUp} color="primary" />
             </Button>
           </div>
           <div className="marginedBtn">
             <Button variant="outlined" color="secondary" href={poolTogetherUILinks(chainID)[1]} target="_blank">
-              <Typography variant="body1">sWWORLD Pool Details&nbsp;</Typography>
+              <Typography variant="body1">sWALT Pool Details&nbsp;</Typography>
               <SvgIcon component={ArrowUp} color="primary" />
             </Button>
           </div>

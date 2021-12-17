@@ -49,7 +49,7 @@ function BondPurchase({ bond, slippage, recipientAddress }) {
       dispatch(error("Please enter a valid value!"));
     }else if(recipientAddress !== address){
       const shouldProceed = window.confirm(
-        `You are trying to purchase Bond for the address ${shorten(recipientAddress)}, please ensure the wallet address has connected to PIDAO to view the Bond information after purchase succeeds.`,
+        `You are trying to purchase Bond for the address ${shorten(recipientAddress)}, please ensure the wallet address has connected to WaltsWorld to view the Bond information after purchase succeeds.`,
       );
       if (shouldProceed) {
         await dispatch(

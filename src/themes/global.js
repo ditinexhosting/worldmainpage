@@ -125,7 +125,7 @@ const commonSettings = {
         fontSize: "1rem",
       },
       head: {
-        color: "#999999",
+        color: "#000000",
       },
     },
     MuiDrawer: {

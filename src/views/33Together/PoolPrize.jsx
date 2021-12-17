@@ -118,7 +118,7 @@ export const PoolPrize = () => {
             </Box>
           ) : (
             <Box margin={2} textAlign="center">
-              <Typography variant="h1">{trim(poolAwardBalance, 2)} sWWORLD</Typography>
+              <Typography variant="h1">{trim(poolAwardBalance, 2)} sWALT</Typography>
               <Typography variant="h4">Current Prize</Typography>
             </Box>
           )} */}
@@ -126,7 +126,7 @@ export const PoolPrize = () => {
 
           </div>
           <Typography variant="h6">
-            3,3 π is the staking reward pool in the PIDAO ecosystem, similar to the Syrup Pool of PancakeSwap. By staking your sPID with PIDAO, you will receive token rewards from the partners.
+            3,3 π is the staking reward pool in the WaltsWorld ecosystem, similar to the Syrup Pool of PancakeSwap. By staking your sWALT with WaltsWorld, you will receive token rewards from the partners.
           </Typography>
           {/* {poolIsLocked ? (
             <Typography variant="h6">Prize is being awarded</Typography>

@@ -90,7 +90,7 @@ export const PoolDeposit = props => {
 
   useEffect(() => {
     props.setInfoTooltipMessage([
-      "Deposit sWWORLD to win! Once deposited, you will receive a corresponding amount of 3,3 π and be entered to win until your sWWORLD is withdrawn.",
+      "Deposit sWALT to win! Once deposited, you will receive a corresponding amount of 3,3 π and be entered to win until your sWALT is withdrawn.",
     ]);
   }, []);
 
@@ -151,7 +151,7 @@ export const PoolDeposit = props => {
                 onClick={() => onDeposit("deposit")}
                 fullWidth
               >
-                {txnButtonText(pendingTransactions, "deposit", "Deposit sWWORLD")}
+                {txnButtonText(pendingTransactions, "deposit", "Deposit sWALT")}
               </Button>
             ) : (
               <Button
@@ -169,11 +169,11 @@ export const PoolDeposit = props => {
           {newOdds > 0 && quantity > 0 && (
             <Box padding={1}>
               <Typography variant="body2" style={{ color: "#33BB33" }}>
-                Depositing {quantity} sWWORLD will increase odds of winning to 1 in {newOdds}&nbsp;
+                Depositing {quantity} sWALT will increase odds of winning to 1 in {newOdds}&nbsp;
               </Typography>
             </Box>
           )}
-          {/* NOTE (Appleseed): added this bc I kept losing track of which accounts I had sWWORLD in during testing */}
+          {/* NOTE (Appleseed): added this bc I kept losing track of which accounts I had sWALT in during testing */}
           <div className={`stake-user-data`}>
             <div className="data-row">
               <Typography variant="body1" align="left">
@@ -183,7 +183,7 @@ export const PoolDeposit = props => {
                 {isAppLoading ? (
                   <Skeleton width="80px" />
                 ) : (
-                  <>{new Intl.NumberFormat("en-US").format(sohmBalance)} sWWORLD</>
+                  <>{new Intl.NumberFormat("en-US").format(sohmBalance)} sWALT</>
                 )}
               </Typography>
             </div>

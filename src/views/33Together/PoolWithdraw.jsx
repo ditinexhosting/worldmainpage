@@ -156,7 +156,7 @@ export const PoolWithdraw = props => {
           {newOdds > 0 && quantity > 0 && (
             <Box padding={1}>
               <Typography color="error" variant="body2">
-                Withdrawing {quantity} sPID reduces your odds of winning to 1 in {newOdds}&nbsp;
+                Withdrawing {quantity} sWALT reduces your odds of winning to 1 in {newOdds}&nbsp;
               </Typography>
             </Box>
           )}
@@ -178,7 +178,7 @@ export const PoolWithdraw = props => {
             </Box>
           )}
 
-          {/* NOTE (Appleseed): added this bc I kept losing track of which accounts I had sPID in during testing */}
+          {/* NOTE (Appleseed): added this bc I kept losing track of which accounts I had sWALT in during testing */}
           <div className={`stake-user-data`}>
             <div className="data-row">
               <Typography variant="body1" align="left">

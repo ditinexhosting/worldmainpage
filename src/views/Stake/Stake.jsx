@@ -111,11 +111,11 @@ function Stake() {
     // 1st catch if quantity > balance
     let gweiValue = ethers.utils.parseUnits(quantity, "gwei");
     if (action === "stake" && gweiValue.gt(ethers.utils.parseUnits(ohmBalance, "gwei"))) {
-      return dispatch(error("You cannot stake more than your PID balance."));
+      return dispatch(error("You cannot stake more than your WALT balance."));
     }
 
     if (action === "unstake" && gweiValue.gt(ethers.utils.parseUnits(sohmBalance, "gwei"))) {
-      return dispatch(error("You cannot unstake more than your sPID balance."));
+      return dispatch(error("You cannot unstake more than your sWALT balance."));
     }
 
     await dispatch(changeStake({ address, action, value: quantity.toString(), provider, networkID: chainID }));
@@ -172,7 +172,7 @@ function Stake() {
                     target="_blank"
                   >
                     <NewReleases viewBox="0 0 24 24" />
-                    <Typography>Migrate sPID!</Typography>
+                    <Typography>Migrate sWALT!</Typography>
                   </Link>
                 )}
               </div>
@@ -222,7 +222,7 @@ function Stake() {
                         Current Index
                       </Typography>
                       <Typography variant="h4">
-                        {currentIndex ? <>{trim(currentIndex, 1)} PID</> : <Skeleton width="150px" />}
+                        {currentIndex ? <>{trim(currentIndex, 1)} WALT</> : <Skeleton width="150px" />}
                       </Typography>
                     </div>
                   </Grid>
@@ -236,7 +236,7 @@ function Stake() {
                   <div className="wallet-menu" id="wallet-menu">
                     {modalButton}
                   </div>
-                  <Typography variant="h6">Connect your wallet to stake PID</Typography>
+                  <Typography variant="h6">Connect your wallet to stake WALT</Typography>
                 </div>
               ) : (
                 <>
@@ -346,21 +346,21 @@ function Stake() {
                     <div className="data-row">
                       <Typography variant="body1">Your Balance</Typography>
                       <Typography variant="body1">
-                        {isAppLoading ? <Skeleton width="80px" /> : <>{trim(ohmBalance, 4)} PID</>}
+                        {isAppLoading ? <Skeleton width="80px" /> : <>{trim(ohmBalance, 4)} WALT</>}
                       </Typography>
                     </div>
 
                     <div className="data-row">
                       <Typography variant="body1">Your Staked Balance</Typography>
                       <Typography variant="body1">
-                        {isAppLoading ? <Skeleton width="80px" /> : <>{trimmedBalance} sPID</>}
+                        {isAppLoading ? <Skeleton width="80px" /> : <>{trimmedBalance} sWALT</>}
                       </Typography>
                     </div>
 
                     <div className="data-row">
                       <Typography variant="body1">Next Reward Amount</Typography>
                       <Typography variant="body1">
-                        {isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} sPID</>}
+                        {isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} sWALT</>}
                       </Typography>
                     </div>
 

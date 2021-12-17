@@ -111,10 +111,10 @@ const NFTPage = () => {
       <div className="maxTopBox">
         <div className="TopBox">
           <div className="titleBox">
-            PINFT
+          WALTNFT
           </div>
           <div className="textBox">
-            PINFT is an important part of the PIDAO ecosystem. Holders can obtain PINFT Collections by staking sPID. In the near future, PINFT will be widely used in PIDAO's protocol governance and community activities, becoming a status symbol of PINFT holders in the PIDAO ecosystem.
+            WALTNFT is an important part of the WaltsWorldDAO ecosystem. Holders can obtain WALTNFT Collections by staking sWALT. In the near future, WALTNFT will be widely used in WaltsWorldDAO's protocol governance and community activities, becoming a status symbol of WALTNFT holders in the WaltsWorldDAO ecosystem.
           </div>
         </div>
         <div>
@@ -132,10 +132,10 @@ const NFTPage = () => {
         </div>
         <div className="TopBox">
           <div className="titleBox">
-            PINFT
+            WALTNFT
           </div>
           <div className="textBox">
-            PINFT is an important part of the PIDAO ecosystem. Holders can obtain PINFT Collections by staking sPID. In the near future, PINFT will be widely used in PIDAO's protocol governance and community activities, becoming a status symbol of PINFT holders in the PIDAO ecosystem.
+            WALTNFT is an important part of the WaltsWorldDAO ecosystem. Holders can obtain WALTNFT Collections by staking sWALT. In the near future, WALTNFT will be widely used in WaltsWorldDAO's protocol governance and community activities, becoming a status symbol of WALTNFT holders in the WaltsWorldDAO ecosystem.
           </div>
         </div>
       </div>

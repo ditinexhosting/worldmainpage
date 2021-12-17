@@ -157,7 +157,7 @@ function TreasuryDashboard() {
                   Current Index
                   <InfoTooltip
                     message={
-                      "The current index tracks the amount of sPID accumulated since the beginning of staking. Basically, how much sPID one would have if they staked and held a single OHM from day 1."
+                      "The current index tracks the amount of sWALT accumulated since the beginning of staking. Basically, how much sWALT one would have if they staked and held a single OHM from day 1."
                     }
                   />
                 </Typography>
@@ -174,7 +174,7 @@ function TreasuryDashboard() {
             <Grid item lg={6} md={6} sm={12} xs={12}>
               <Paper className="ohm-card">
                   <Typography variant="h6" color="textSecondary">
-                    PID Price
+                  WALT Price
                   </Typography>
                   <Typography variant="h5">
                     {/* appleseed-fix */}
@@ -202,7 +202,7 @@ function TreasuryDashboard() {
                     Current Index
                     <InfoTooltip
                       message={
-                        "The current index tracks the amount of sPID accumulated since the beginning of staking. Basically, how much sPID one would have if they staked and held a single PID from day 1."
+                        "The current index tracks the amount of sWALT accumulated since the beginning of staking. Basically, how much sWALT one would have if they staked and held a single WALT from day 1."
                       }
                     />
                   </Typography>
@@ -309,7 +309,7 @@ function TreasuryDashboard() {
             <Grid item lg={6} md={6} sm={12} xs={12}>
               <Paper className="ohm-card">
                 <Typography variant="h6" color="textSecondary">
-                  Backing per PID
+                  Backing per WALT
                 </Typography>
                 <Typography variant="h5">
                   {backingPerOhm ? formatCurrency(backingPerOhm, 2) : <Skeleton type="text" />}
@@ -361,7 +361,7 @@ function TreasuryDashboard() {
             <Grid item lg={6} md={6} sm={12} xs={12}>
               <Paper className="ohm-card">
                 <Typography variant="h6" color="textSecondary">
-                PID Staked
+                WALT Staked
                   </Typography>
                   <Typography variant="h5">
                     {staked ? `${trim(staked, 2)}%` : <Skeleton type="text" />}

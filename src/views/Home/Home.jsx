@@ -163,7 +163,7 @@ function Home() {
     <div className="headBox">
       <img src={Logoimg} alt="" className="logo" />
       <ul className="uls">
-        <li className="lis"><a className="a" href="https://pidao.gitbook.io/homepage/whitepapers/pidao-pro">PIDAO Pro</a></li>
+        <li className="lis"><a className="a" href="https://pidao.gitbook.io/homepage/whitepapers/pidao-pro">WaltsWorldDAO Pro</a></li>
         <li className="lis"><a className="a" href="/stake">Stake</a></li>
         <li className="lis"><a className="a" href="/bonds">Bond</a></li>
         <li className="lis"><a className="a" href="https://pidao.gitbook.io/homepage/pidao-finance/faqs">FAQs</a></li>
@@ -220,7 +220,7 @@ function Home() {
       
       </div> */}
       <div className="contentStyle">
-        PIDAO is a decentralized reserve currency protocol based on the PID token and aims at building a community-owned decentralized financial infrastructure for the crypto world.
+        WaltsWorld is a decentralized reserve currency protocol based on the WALT token and aims at building a community-owned decentralized financial infrastructure for the crypto world.
       </div>
       <div className="fxBetween">
         <a href="/stake" className="btnBox_1">Enter App</a>
@@ -350,7 +350,7 @@ function Inp_Box({idoBalance,busdAmount}) {
       <input type="text" placeholder={`${busdAmount}BUSD`} disabled className="InpStyle" />
     </div>
     <div className="Content_Box3">
-    PIDAO project will launch on 12:00 8th Nov. 2021, you will be able to claim your PID token manually on the website. 
+    WaltsWorld project will launch on 12:00 8th Nov. 2021, you will be able to claim your WALT token manually on the website. 
     </div>
 
     {address && hasAllowance() ? (
