@@ -6,7 +6,7 @@ import { useWeb3Context } from "src/hooks/web3Context";
 import "./home.scss";
 import { Skeleton } from "@material-ui/lab";
 import Logoimg from '../../assets/ohm/logo@2x.png'
-import Bg from '../../assets/ohm/bg.png'
+//import Bg from '../../assets/ohm/bg.png'
 import { Link } from "react-router-dom";
 import TimeCountdown from "src/components/TimeCountdown";
 import ShenJiImg1 from '../../assets/ohm/shenji1-1.png'
@@ -195,7 +195,7 @@ function Home() {
 
     </div>
     <div className="boodyBox fxColumn">
-      <img src={Bg} alt="" className="bg" />
+    {/*  <img src={Bg} alt="" className="bg" />  */}
       <div className="titleColor">
         The Decentralized
       </div>

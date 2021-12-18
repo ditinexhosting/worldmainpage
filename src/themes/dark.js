@@ -14,10 +14,7 @@ const darkTheme = {
 //   background:`
 //   linear-gradient(180deg, rgba(8, 15, 53, 0), rgba(0, 0, 10, 0.9))
 //   `,
-   background: `
-   linear-gradient(190deg, #416a90 1%, #accfed 75%)
-   
-     `,
+  background: `linear-gradient(190deg, #416a90 1%, #accfed 75%) `,
   paperBg: "#b1c4d4",
   modalBg: "#282D37",
   popoverBg: "rgba(54, 56, 64, 0.99)",
