@@ -15,6 +15,7 @@ export default class Root extends Component {
   render() {
     return (
       <Web3ContextProvider>
+        <Provider store={store}>
           <BrowserRouter basename={"/#"}>
             <App />
           </BrowserRouter>
