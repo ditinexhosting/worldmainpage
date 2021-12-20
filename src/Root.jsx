@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import { Component } from "react";
 import { Provider } from "react-redux";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Web3ContextProvider } from "./hooks/web3Context";
 
 import App from "./App";
@@ -15,10 +15,9 @@ export default class Root extends Component {
   render() {
     return (
       <Web3ContextProvider>
-        <Provider store={store}>
-<HashRouter basename={optionalString} getUserConfirmation={optionalFunc} hashType={optionalString}>
-  <App />
-</HashRouter>
+          <BrowserRouter basename={"/#"}>
+            <App />
+          </BrowserRouter>
         </Provider>
       </Web3ContextProvider>
     );
