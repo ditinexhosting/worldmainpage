@@ -223,7 +223,7 @@ function Home() {
         WaltsWorld is a decentralized reserve currency protocol based on the WALT token and aims at building a community-owned decentralized financial infrastructure for the crypto world.
       </div>
       <div className="fxBetween">
-        <a href="/stake" className="btnBox_1">Enter App</a>
+        <a href="https://cryptonerdion.github.io/dashboard/" className="btnBox_1">Enter App</a>
         <a href="https://pidao.gitbook.io/homepage/" className="btnBox_2 a" target="_blank">Documentation</a>
       </div>
       <div className="fxBetween2 mgTop">
