@@ -53,7 +53,7 @@ const deploy = async () => {
 
   console.log();
 
-  let ipnsName = "bafybeicvwzzp2xbz665w4vdhztshwwbuo6pw57xg4mdxuu6kazjq3za3te";
+  let ipnsName = "";
   if (nodeMayAllowPublish(ipfs)) {
     console.log(`✍️  Publishing /ipfs/${cid.toString()} to IPNS...`);
     process.stdout.write("   Publishing to IPNS can take up to roughly two minutes.\r");
