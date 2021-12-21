@@ -142,7 +142,7 @@ function Home() {
   const ShowhideClick = () => {
     setmenu(!menu);
   }
-  //支付弹窗
+
   const [Popup, setPopup] = useState(false);
   const PopupClick = () => {
     let timeId = null;
@@ -163,11 +163,11 @@ function Home() {
     <div className="headBox">
       <img src={Logoimg} alt="" className="logo" />
       <ul className="uls">
-        <li className="lis"><a className="a" href="https://pidao.gitbook.io/homepage/whitepapers/pidao-pro">WaltsWorldDAO Pro</a></li>
+        <li className="lis"><a className="a" href="https://waltsworlddao.gitbook.io/waltsworld/whitepapers/waltsworld-pro">WaltsWorldDAO Pro</a></li>
         <li className="lis"><a className="a" href="/stake">Stake</a></li>
         <li className="lis"><a className="a" href="/bonds">Bond</a></li>
-        <li className="lis"><a className="a" href="https://pidao.gitbook.io/homepage/pidao-finance/faqs">FAQs</a></li>
-        <li className="lis"><a className="a" href="https://pidao.gitbook.io/homepage/community/governance">Get Involved</a></li>
+        <li className="lis"><a className="a" href="https://waltsworlddao.gitbook.io/waltsworld/waltsworld/faqs">FAQs</a></li>
+        <li className="lis"><a className="a" href="https://waltsworlddao.gitbook.io/waltsworld/community/governance">Get Involved</a></li>
       </ul>
       <div>
       <Button
@@ -186,7 +186,7 @@ function Home() {
         {/* <a href="https://pidao.gitbook.io/homepage/contracts/audits/peckshield-audit-report" target="_blank"><img src={ShenJiImg1} alt="" className="shenji" /></a>
         <a href="https://pidao.gitbook.io/homepage/contracts/audits/omniscia-audit-report" target="_blank"><img src={ShenJiImg2} alt="" className="shenji" /></a> */}
       </div>
-      {/* 移动端顶部列表 */}
+
       <div className="CaiDanImgBox">
         <img src={CaiDan} alt="" onClick={() => ShowhideClick()} className="caidanimg" />
       </div>
@@ -224,7 +224,7 @@ function Home() {
       </div>
       <div className="fxBetween">
         <a href="https://cryptonerdion.github.io/Worldfrontend/" className="btnBox_1">Enter App</a>
-        <a href="https://pidao.gitbook.io/homepage/" className="btnBox_2 a" target="_blank">Documentation</a>
+        <a href="https://waltsworlddao.gitbook.io/waltsworld/" className="btnBox_2 a" target="_blank">Documentation</a>
       </div>
       <div className="fxBetween2 mgTop">
         <div className="fxColumn2">
@@ -247,29 +247,29 @@ function Home() {
         </div>
       </div>
     </div>
-    {/* 底部链接栏 */}
+
     <div className="bottomBor a">
-      <a href="https://twitter.com/PIDAOFinance" target="_blank" className="bottomImgs a2"><img src={img1_1} alt="" className="bottomImgs2" /></a>
-      <a href="https://github.com/PIDAOFinance" target="_blank" className="bottomImgs a2"><img src={img1_2} alt="" className="bottomImgs2" /></a>
-      <a href="https://discord.com/invite/hPRwxePEYV" target="_blank" className="bottomImgs a2"><img src={medium} alt="" className="bottomImgs2" /></a>
-      <a href="https://t.me/PIDAOfinance" target="_blank" className="bottomImgs a"><img src={img1_4} alt="" className="bottomImgs2" /></a>
-      {/* <a href="https://discord.com/invite/hPRwxePEYV" target="_blank" className="bottomImgs a"><img src={DiscordImg} alt="" className="bottomImgs2" /></a> */}
+      <a href="https://twitter.com/WaltsWorldDAO" target="_blank" className="bottomImgs a2"><img src={img1_1} alt="" className="bottomImgs2" /></a>
+   {/*   <a href="" target="_blank" className="bottomImgs a2"><img src={img1_2} alt="" className="bottomImgs2" /></a>  */}
+   {/*   <a href="" target="_blank" className="bottomImgs a2"><img src={medium} alt="" className="bottomImgs2" /></a>  */}
+      <a href="https://t.me/+PIbuneS5REJlYTVk" target="_blank" className="bottomImgs a"><img src={img1_4} alt="" className="bottomImgs2" /></a>
+      {/* <a href="" target="_blank" className="bottomImgs a"><img src={DiscordImg} alt="" className="bottomImgs2" /></a> */}
     </div>
     {menu ?
       <div className="moban" onClick={() => ShowhideClick()} >
         <div className="CaiDanlieBiao">
           <img src={Logoimg} alt="" className="logo2" />
-          <div className="lis2"><a target="_blank" className="a" href="https://pidao.gitbook.io/homepage/whitepapers/pidao-pro">PIDAO Pro</a></div>
+          <div className="lis2"><a target="_blank" className="a" href="https://waltsworlddao.gitbook.io/waltsworld/whitepapers/waltsworld-pro">WaltsWorld Pro</a></div>
           <div className="lis2"><a className="a" href="/stake">Stake</a></div>
           <div className="lis2"><a className="a" href="/bonds">Bond</a></div>
-          <div className="lis2"><a target="_blank" className="a" href="https://pidao.gitbook.io/homepage/pidao-finance/faqs">FAQs</a></div>
-          <div className="lis2"><a target="_blank" className="a" href="https://pidao.gitbook.io/homepage/community/governance">Get Involved</a></div>
+          <div className="lis2"><a target="_blank" className="a" href="https://waltsworlddao.gitbook.io/waltsworld/waltsworld/faqs">FAQs</a></div>
+          <div className="lis2"><a target="_blank" className="a" href="https://waltsworlddao.gitbook.io/waltsworld/community/governance">Get Involved</a></div>
           {/* <a href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OlympusDAO-v1.0.pdf" target="_blank" ><img src={ShenJiImg1} alt="" className="shenji2" /></a>
           <a href="https://omniscia.io/olympusdao-algorithmic-currency-protocol/" target="_blank"><img src={ShenJiImg2} alt="" className="shenji3" /></a> */}
         </div>
       </div> : null}
 
-    {/* 支付弹窗 */}
+
 
     {Popup ?
       <div className="Max_Box">
@@ -308,7 +308,7 @@ const PAYSTATUS=({idoBalance,isPay,isOpen,busdAmount,openIsPayTime})=>{
     return <PadingBaiMingDan_Box/>
   }
 }
-//输入框组件
+
 function Inp_Box({idoBalance,busdAmount}) {
   const { provider, address, connected, connect, chainID,disconnect } = useWeb3Context();
   const dispatch = useDispatch();
@@ -350,7 +350,7 @@ function Inp_Box({idoBalance,busdAmount}) {
       <input type="text" placeholder={`${busdAmount}BUSD`} disabled className="InpStyle" />
     </div>
     <div className="Content_Box3">
-    WaltsWorld project will launch on 12:00 8th Nov. 2021, you will be able to claim your WALT token manually on the website. 
+    WaltsWorld project will launch on ???, you will be able to claim your WALT token manually on the website. 
     </div>
 
     {address && hasAllowance() ? (
@@ -387,14 +387,14 @@ const MinInp_Box = styled.div`
   flex-direction: column;
 `
 
-//判定等待组件
+
 function Pading_Box (){
   return<PadingBox>
     <PandingImg src={PdImg}/>
     <PandingContent>Evaluating, please wait a moment～</PandingContent>
   </PadingBox>
 }
-//判定白名单
+
 function PadingBaiMingDan_Box ({title="You are not on the whitelist"}){
   return<PadingBox>
     <PandingImg src={WuImg}/>
