@@ -13,12 +13,12 @@ const externalUrls = [
   // },
   {
     title: "Governance",
-    url: "",
+    url: "https://waltsworlddao.gitbook.io/waltsworld/community/governance",
     icon: <SvgIcon color="primary" component={GovIcon} />,
   },
   {
     title: "Docs",
-    url: "",
+    url: "https://waltsworlddao.gitbook.io/waltsworld/",
     icon: <SvgIcon color="primary" component={DocsIcon} />,
   },
   {
