@@ -81,7 +81,7 @@ function NavContent() {
                 viewBox="0 0 151 100"
                 style={{ minWdth: "151px", minHeight: "98px", width: "151px" }}
               /> */}
-              <img src={LogoImg} alt="" style={{ width: "151px" }} />
+              <img src={LogoImg} alt="" style={{ width: "175px" }} />
             </Link>
 
             {/* {address && (
