@@ -170,7 +170,7 @@ function Home() {
         <li className="lis"><a className="a" href="https://waltsworlddao.gitbook.io/waltsworld/community/governance">Get Involved</a></li>
       </ul>
       <div>
-      <Button
+ {/*     <Button
         className={buttonStyles}
         variant="contained"
         color="secondary"
@@ -182,7 +182,7 @@ function Home() {
         key={1}
       >
         {buttonText}
-      </Button>
+      </Button>*/}
         {/* <a href="https://pidao.gitbook.io/homepage/contracts/audits/peckshield-audit-report" target="_blank"><img src={ShenJiImg1} alt="" className="shenji" /></a>
         <a href="https://pidao.gitbook.io/homepage/contracts/audits/omniscia-audit-report" target="_blank"><img src={ShenJiImg2} alt="" className="shenji" /></a> */}
       </div>
