@@ -31,10 +31,12 @@ import { girth as gTheme } from "./themes/girth.js";
 import "./style.scss";
 
 // 😬 Sorry for all the console logging
-const DEBUG = false;
+const DEBUG = true;
 
 // IPFS workaround for router
 const Router = process.env.REACT_APP_IPFS === 'True' ? HashRouter : BrowserRouter
+
+console.log('REACT_APP_IPFS >> ',process.env.REACT_APP_IPFS)
 
 // 🛰 providers
 if (DEBUG) console.log("📡 Connecting to Mainnet Ethereum");
