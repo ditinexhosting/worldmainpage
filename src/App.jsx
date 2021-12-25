@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@material-ui/core/styles";
 import { useEffect, useState, useCallback, useMemo } from "react";
-import { HashRouter, BrowserRouter as Router, Route, Redirect, Switch, useLocation, useHistory } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Redirect, Switch, useLocation, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Hidden, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
