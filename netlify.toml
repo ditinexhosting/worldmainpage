@@ -1,6 +1,3 @@
-[build.environment]
-
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
