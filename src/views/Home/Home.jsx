@@ -197,7 +197,7 @@ function Home() {
     <div className="boodyBox fxColumn">
     {/*  <img src={Bg} alt="" className="bg" />  */}
       <div className="titleColor">
-        The Decentralizedxxxx
+        The Decentralized
       </div>
       <div className="titleColor">
         Reserve Currency
