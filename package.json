@@ -1,7 +1,7 @@
 {
   "name": "@scaffold-eth/react-app",
   "version": "1.1.0",
-  "homepage": ".",
+  "homepage": "./",
   "browserslist": {
     "production": [
       ">0.2% or last 2 versions",
@@ -106,16 +106,9 @@
     "surge": "^0.21.5"
   },
   "scripts": {
-    "build": "CI=false react-scripts build",
+    "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "test": "react-scripts test",
-    "lint": "eslint --config ./.eslintrc.js --ignore-path ./.eslintignore ./src/",
-    "ipfs": "node ./scripts/ipfs.js",
-    "surge": "surge ./build",
-    "s3": "node ./scripts/s3.js",
-    "ship": "yarn surge",
-    "theme": "npx gulp less",
-    "watch": "node ./scripts/watch.js"
+    "test": "react-scripts test"
   }
 }
