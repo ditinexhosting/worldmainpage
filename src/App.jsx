@@ -35,8 +35,9 @@ const DEBUG = true;
 
 // IPFS workaround for router
 const Router = process.env.REACT_APP_IPFS === 'True' ? HashRouter : BrowserRouter
+console.log(Router)
+const Prefix = process.env.REACT_APP_IPFS === 'True' ? '/#' : ''
 
-console.log('REACT_APP_IPFS >> ',process.env.REACT_APP_IPFS)
 
 // 🛰 providers
 if (DEBUG) console.log("📡 Connecting to Mainnet Ethereum");
@@ -216,10 +217,10 @@ function App() {
 
           <div className={`${path === "/" ? null : classes.content} ${isSmallerScreen && classes.contentShift}`}>
             <Switch>
-              <Route exact path="/dashboard">
+              <Route exact path={Prefix+"/dashboard"}>
                 <TreasuryDashboard />
               </Route>
-              <Route path="/stake">
+              <Route path={Prefix+"/stake"}>
                 <Stake />
               </Route>
               {/* <Route exact path="/">
@@ -228,16 +229,16 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/33-together">
+              <Route path={Prefix+"/33-together"}>
                 <PoolTogether />
               </Route>
-              <Route path="/nft">
+              <Route path={Prefix+"/nft"}>
                 <NFTPage />
               </Route>
-              <Route path="/bonds">
+              <Route path={Prefix+"/bonds"}>
                 {bonds.map(bond => {
                   return (
-                    <Route exact key={bond.name} path={`/bonds/${bond.name}`}>
+                    <Route exact key={bond.name} path={`${Prefix}/bonds/${bond.name}`}>
                       <Bond bond={bond} />
                     </Route>
                   );
